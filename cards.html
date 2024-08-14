@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Notable Personalities and Popular Interests</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: whitesmoke;
+}
+</style>
+<body>
+    <header>
+        <h1>Discover Notable Personalities and Popular Interests</h1>
+    </header>
+    <section class="container">
+        <article class="card" data-url="https://www.livescore.com/en/">
+            <img src="https://i.pinimg.com/564x/6b/38/ef/6b38ef66e69c53fc92a56766ff56adff.jpg">
+            <h3>Football</h3>
+            <p>Football is a globally popular team sport played with a spherical ball between two teams of eleven players.</p>
+        </article>
+        <article class="card" data-url="https://www.hockeyindia.org/news/incredible-india-beat-germany-5-4-to-win-the-historic-bronze-medal-at-the-olympic-games-tokyo-2020">
+            <img src="https://i.pinimg.com/564x/b2/0d/25/b20d25c652e05c863ebe32e0745868b8.jpg">
+            <h3>Hockey</h3>
+            <p>Hockey is a fast-paced team sport played on ice or field, where players use sticks to hit a puck or ball into the opponent's goal.</p>
+        </article>
+        <article class="card" data-url="https://en.wikipedia.org/wiki/Manu_Bhaker">
+            <img src="https://i.pinimg.com/564x/73/31/9f/73319f76635071b5b9a903035fb1823b.jpg">
+            <h3>Manu Bhaker</h3>
+            <p>Manu Bhaker is an accomplished Indian sport shooter who has represented India in various international competitions and Olympic Games.</p>
+        </article>
+        <article class="card" data-url="https://en.wikipedia.org/wiki/Karan_Aujla">
+            <img src="https://i.pinimg.com/736x/05/bf/d9/05bfd9d9bd1afe58db8169c5384cd21a.jpg">
+            <h3>Karan Aujla</h3>
+            <p>Karan Aujla is a popular Indian singer, songwriter, and rapper known for his work in the Punjabi music industry.</p>
+        </article>
+        <article class="card" data-url="https://www.battlegroundsmobileindia.com/">
+            <img src="https://i.pinimg.com/564x/37/7a/ab/377aab6c8d17efa8c86ca94cf4e6cc0d.jpg">
+            <h3>BGMI</h3>
+            <p>BGMI (Battlegrounds Mobile India) is a battle royale game developed specifically for the Indian gaming community.</p>
+        </article>
+        <article class="card" data-url="https://en.wikipedia.org/wiki/Narendra_Modi">
+            <img src="https://i.pinimg.com/564x/73/e1/d6/73e1d685945bc9ebb0506caedaf55131.jpg">
+            <h3>Narendra Modi</h3>
+            <p>Narendra Modi is the current Prime Minister of India, known for his economic reforms and strong leadership on the global stage.</p>
+        </article>
+        <article class="card" data-url="https://www.apple.com/in/">
+            <img src="https://i.pinimg.com/564x/db/fe/75/dbfe75990174020a7ebf8799999212d8.jpg">
+            <h3>Apple</h3>
+            <p>Apple Inc. is a leading technology company known for its innovative products like the iPhone, Mac, and Apple Watch, as well as services like the App Store and iCloud.</p>
+        </article>
+        <article class="card" data-url="https://en.wikipedia.org/wiki/Paris">
+            <img src="https://i.pinimg.com/736x/f8/fc/3c/f8fc3c26adeb49e01f47d27440edf266.jpg">
+            <h3>Paris</h3>
+            <p>Paris, the capital of France, is known for its art, fashion, gastronomy, and culture. The city is home to iconic landmarks like the Eiffel Tower.</p>
+        </article>
+        <article class="card" data-url="https://en.wikipedia.org/wiki/Sidharth_Malhotra">
+            <img src="https://i.pinimg.com/564x/aa/a9/75/aaa97587d7546585225df20233e03932.jpg">
+            <h3>Sidharth Malhotra</h3>
+            <p>Sidharth Malhotra is an Indian actor and former model who made his Bollywood debut with the film Student of the Year in 2012.</p>
+        </article>
+        <article class="card" data-url="https://en.wikipedia.org/wiki/Kiara_Advani">
+            <img src="https://i.pinimg.com/736x/31/8e/07/318e0716fef1e5cb68256d6b3f13f1f4.jpg">
+            <h3>Kiara Advani</h3>
+            <p>Kiara Advani is an Indian actress known for her work in Bollywood films. She gained recognition for her roles in movies like Kabir Singh, and Shershaah.</p>
+        </article>
+        <article class="card" data-url="https://en.wikipedia.org/wiki/Triptii_Dimri">
+            <img src="https://i.pinimg.com/564x/ce/f2/06/cef2066f08b98d8d89e83c5a4eea9a08.jpg">
+            <h3>Triptii Dimri</h3>
+            <p>Triptii Dimri is an Indian actress known for her performances in Hindi cinema. She gained recognition for her roles in films like Bulbbul and Qala.</p>
+        </article>
+        <article class="card" data-url="https://en.wikipedia.org/wiki/Ranbir_Kapoor">
+            <img src="https://i.pinimg.com/736x/d7/eb/84/d7eb84a5b3ec24ef8c82e352100ed6a3.jpg">
+            <h3>Ranbir Kapoor</h3>
+            <p>Ranbir Kapoor is a popular Indian actor known for his versatile performances in Bollywood. He has won numerous awards for his roles in films like Rockstar, Barfi, and Sanju.</p>
+        </article>
+    </section>
+
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                window.location.href = card.dataset.url;
+            });
+        });
+    </script>
+</body>
+</html>
